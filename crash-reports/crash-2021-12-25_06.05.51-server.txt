@@ -1,0 +1,245 @@
+---- Mohist Crash Report ----
+
+WARNING: coremods are present:
+  llibrary (llibrary-core-1.0.11-1.12.2.jar)
+  LittlePatchingLoader (LittleTiles_v1.5.0-pre320_mc1.12.2.jar)
+  BewitchmentFMLLoadingPlugin (bewitchment-1.12.2-0.0.22.59.jar)
+  IELoadingPlugin (ImmersiveEngineering-core-0.12-98.jar)
+  AstralCore (astralsorcery-1.12.2-1.10.27.jar)
+  CWGFarPlaneViewCoreMod (CWGFarPlaneView-0.4.0-core.jar)
+  CreativePatchingLoader (CreativeCore_v1.10.44_mc1.12.2.jar)
+  Quark Plugin (Quark-r1.6-179.jar)
+  McLib core mod (mclib-2.2-1.12.2.jar)
+  CorePlugin (ForgeEndertech-1.12.2-4.5.5.0-build.0561.jar)
+Contact their authors BEFORE contacting forge
+
+
+
+Time: 12/25/21 6:05 AM
+Description: Ticking player
+
+java.lang.NullPointerException: Ticking player
+	at flaxbeard.immersivepetroleum.common.EventHandler.onEntityJoiningWorld(EventHandler.java:615)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_430_EventHandler_onEntityJoiningWorld_EntityJoinWorldEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:96)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:186)
+	at net.minecraft.world.World.addEntity(World.java:1543)
+	at net.minecraft.world.WorldServer.addEntity(WorldServer.java:1251)
+	at net.minecraft.world.WorldServer.func_72838_d(WorldServer.java:1245)
+	at net.minecraft.server.management.PlayerList.transferEntityToWorld(PlayerList.java:1285)
+	at net.minecraft.server.management.PlayerList.transferPlayerToDimension(PlayerList.java:1182)
+	at net.minecraft.entity.player.EntityPlayerMP.changeDimension(EntityPlayerMP.java:884)
+	at net.minecraft.entity.Entity.func_184204_a(Entity.java:2862)
+	at net.minecraft.entity.Entity.postTick(Entity.java:514)
+	at net.minecraft.world.World.func_72866_a(World.java:2397)
+	at net.minecraft.world.World.func_72870_g(World.java:2347)
+	at net.minecraft.world.WorldServer.func_184147_l(WorldServer.java:774)
+	at net.minecraft.world.World.func_72939_s(World.java:2089)
+	at net.minecraft.world.WorldServer.func_72939_s(WorldServer.java:744)
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:897)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71190_q(DedicatedServer.java:461)
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:778)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at flaxbeard.immersivepetroleum.common.EventHandler.onEntityJoiningWorld(EventHandler.java:615)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_430_EventHandler_onEntityJoiningWorld_EntityJoinWorldEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:96)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:186)
+	at net.minecraft.world.World.addEntity(World.java:1543)
+	at net.minecraft.world.WorldServer.addEntity(WorldServer.java:1251)
+	at net.minecraft.world.WorldServer.func_72838_d(WorldServer.java:1245)
+	at net.minecraft.server.management.PlayerList.transferEntityToWorld(PlayerList.java:1285)
+	at net.minecraft.server.management.PlayerList.transferPlayerToDimension(PlayerList.java:1182)
+	at net.minecraft.entity.player.EntityPlayerMP.changeDimension(EntityPlayerMP.java:884)
+	at net.minecraft.entity.Entity.func_184204_a(Entity.java:2862)
+	at net.minecraft.entity.Entity.postTick(Entity.java:514)
+	at net.minecraft.world.World.func_72866_a(World.java:2397)
+	at net.minecraft.world.World.func_72870_g(World.java:2347)
+
+-- Player being ticked --
+Details:
+	Entity Type: null (net.minecraft.entity.player.EntityPlayerMP)
+	Entity ID: 3098
+	Entity Name: ParadoxPod
+	Entity's Exact location: -1.50, 68.00, 19.01
+	Entity's Block location: World: (-2,68,19), Chunk: (at 14,4,3 in -1,1; contains blocks -16,0,16 to -1,255,31), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.WorldServer.func_184147_l(WorldServer.java:774)
+	at net.minecraft.world.World.func_72939_s(World.java:2089)
+	at net.minecraft.world.WorldServer.func_72939_s(WorldServer.java:744)
+
+-- Affected level --
+Details:
+	Level name: world
+	All players: 1 total; [EntityPlayerMP['Uncle_Doogie'/146, uuid='cea5d8f4-e3fd-4362-a30c-4450705a46f0', l='world', x=-576.30, y=63.00, z=-259.32, cx=-37, cd=-17, tl=228540, v=true, d=false](Uncle_Doogie at -576.3000000119209,63.0,-259.3167694912392)]
+	Chunk stats: ServerChunkCache: 972 Drop: 0
+	Level seed: -2966578374349627802
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (-96,64,244), Chunk: (at 0,4,4 in -6,15; contains blocks -96,0,240 to -81,255,255), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 3590814 game time, 3813221 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 43204 (now: false), thunder time: 45718 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:897)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71190_q(DedicatedServer.java:461)
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:778)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+-- System Details --
+Details:
+	Mohist version: 1.12.2-292
+	Operating System: Linux (amd64) version 5.4.0-88-generic
+	Java Version: 1.8.0_312, Private Build
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Private Build
+	Memory: 4204623296 bytes (4009 MB) / 6509035520 bytes (6207 MB) up to 7635730432 bytes (7282 MB)
+	JVM Flags: 2 total; -Xms6G -Xmx8G
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 2
+	CraftBukkit Information: 
+   Running: Mohist version git-Mohist-1.12.2-292 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT) true
+   Plugins: { mcMMO v1.5.10-SNAPSHOT com.gmail.nossr50.mcMMO [nossr50, GJ, NuclearW, bm01, Glitchfinder, TfT_02, t00thpick1, Riking],
+}
+   Warnings: DEFAULT
+   Reload Count: 1
+   Threads: { WAITING Forge Chunk I/O Executor Thread-2: [sun.misc.Unsafe.park(Native Method), java.util.concurrent.locks.LockSupport.park(LockSupport.java:175), java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039), java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442), java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074), java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134), java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624), java.lang.Thread.run(Thread.java:748)], RUNNABLE Signal Dispatcher: [], WAITING Finalizer: [java.lang.Object.wait(Native Method), java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144), java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165), java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:216)], WAITING ic2-poolthread-1: [java.lang.Object.wait(Native Method), java.lang.Object.wait(Object.java:502), ic2.core.util.PriorityExecutor$FixedPriorityQueue.take(PriorityExecutor.java:143), java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074), java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134), java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624), java.lang.Thread.run(Thread.java:748)], TIMED_WAITING Snooper Timer: [java.lang.Object.wait(Native Method), java.util.TimerThread.mainLoop(Timer.java:552), java.util.TimerThread.run(Timer.java:505)], WAITING ComputerCraft-Computer-Runner-0: [sun.misc.Unsafe.park(Native Method), java.util.concurrent.locks.LockSupport.park(LockSupport.java:175), java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039), dan200.computercraft.core.computer.ComputerThread$TaskRunner.run(ComputerThread.java:463), java.lang.Thread.run(Thread.java:748)], TIMED_WAITING ComputerCraft-Coroutine-0: [sun.misc.Unsafe.park(Native Method), java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215), java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460), java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362), java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:941), java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073), java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134), java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624), java.lang.Thread.run(Thread.java:748)], WAITING CQR Dungeon Generator Thread: [sun.misc.Unsafe.park(Native Method), java.util.concurrent.locks.LockSupport.park(LockSupport.java:175), java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039), java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442), team.cqr.cqrepoured.structuregen.DungeonGeneratorThread.run(DungeonGeneratorThread.java:39)], TIMED_WAITING Timer-0: [java.lang.Object.wait(Native Method), java.util.TimerThread.mainLoop(Timer.java:552), java.util.TimerThread.run(Timer.java:505)], WAITING CQR Dungeon Generator Thread: [sun.misc.Unsafe.park(Native Method), java.util.concurrent.locks.LockSupport.park(LockSupport.java:175), java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039), java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442), team.cqr.cqrepoured.structuregen.DungeonGeneratorThread.run(DungeonGeneratorThread.java:39)], TIMED_WAITING Mohist Watchdog Thread: [java.lang.Thread.sleep(Native Method), org.spigotmc.WatchdogThread.run(WatchdogThread.java:95)], RUNNABLE TerminalConsoleWriter - 2: [java.io.FileOutputStream.writeBytes(Native Method), java.io.FileOutputStream.write(FileOutputStream.java:326), java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82), java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140), java.io.PrintStream.flush(PrintStream.java:338), java.io.PrintStream.flush(PrintStream.java:338), java.io.FilterOutputStream.flush(FilterOutputStream.java:140), java.io.PrintStream.flush(PrintStream.java:338), sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:297), sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141), java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229), jline.console.ConsoleReader.flush(ConsoleReader.java:1032), org.bukkit.craftbukkit.v1_12_R1.util.TerminalConsoleWriterThread.run(TerminalConsoleWriterThread.java:45), java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149), java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624), java.lang.Thread.run(Thread.java:748)], WAITING NonBlockingInputStreamThread: [java.lang.Object.wait(Native Method), jline.internal.NonBlockingInputStream.run(NonBlockingInputStream.java:275), java.lang.Thread.run(Thread.java:748)], TIMED_WAITING process reaper: [sun.misc.Unsafe.park(Native Method), java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215), java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460), java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362), java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:941), java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073), java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134), java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624), java.lang.Thread.run(Thread.java:748)], WAITING Keep-Alive-SocketCleaner: [java.lang.Object.wait(Native Method), sun.net.www.http.KeepAliveStreamCleaner.run(KeepAliveStreamCleaner.java:101), java.lang.Thread.run(Thread.java:748)], WAITING CQR Dungeon Generator Thread: [sun.misc.Unsafe.park(Native Method), java.util.concurrent.locks.LockSupport.park(LockSupport.java:175), java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039), java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442), team.cqr.cqrepoured.structuregen.DungeonGeneratorThread.run(DungeonGeneratorThread.java:39)], RUNNABLE Netty Epoll Server IO #2: [io.netty.channel.epoll.Native.epollWait0(Native Method), io.netty.channel.epoll.Native.epollWait(Native.java:114), io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:235), io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:252), io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884), java.lang.Thread.run(Thread.java:748)], RUNNABLE Netty Epoll Server IO #1: [io.netty.channel.epoll.Native.epollWait0(Native Method), io.netty.channel.epoll.Native.epollWait(Native.java:114), io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:235), io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:252), io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884), java.lang.Thread.run(Thread.java:748)], WAITING Forge Chunk I/O Executor Thread-1: [sun.misc.Unsafe.park(Native Method), java.util.concurrent.locks.LockSupport.park(LockSupport.java:175), java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039), java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442), java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074), java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134), java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624), java.lang.Thread.run(Thread.java:748)], TIMED_WAITING Metrics - 3: [sun.misc.Unsafe.park(Native Method), java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215), java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078), java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093), java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809), java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074), java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134), java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624), java.lang.Thread.run(Thread.java:748)], TIMED_WAITING ObjectCleanerThread: [java.lang.Object.wait(Native Method), java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144), io.netty.util.internal.ObjectCleaner$1.run(ObjectCleaner.java:54), io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30), java.lang.Thread.run(Thread.java:748)], WAITING CQR Dungeon Generator Thread: [sun.misc.Unsafe.park(Native Method), java.util.concurrent.locks.LockSupport.park(LockSupport.java:175), java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039), java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442), team.cqr.cqrepoured.structuregen.DungeonGeneratorThread.run(DungeonGeneratorThread.java:39)], RUNNABLE Netty Epoll Server IO #3: [io.netty.channel.epoll.Native.epollWait0(Native Method), io.netty.channel.epoll.Native.epollWait(Native.java:114), io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:235), io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:252), io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884), java.lang.Thread.run(Thread.java:748)], WAITING Craft Async Scheduler Management Thread: [sun.misc.Unsafe.park(Native Method), java.util.concurrent.locks.LockSupport.park(LockSupport.java:175), java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039), java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442), java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074), java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134), java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624), java.lang.Thread.run(Thread.java:748)], WAITING CQR Dungeon Generator Thread: [sun.misc.Unsafe.park(Native Method), java.util.concurrent.locks.LockSupport.park(LockSupport.java:175), java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039), java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442), team.cqr.cqrepoured.structuregen.DungeonGeneratorThread.run(DungeonGeneratorThread.java:39)], WAITING Java2D Disposer: [java.lang.Object.wait(Native Method), java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144), java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165), sun.java2d.Disposer.run(Disposer.java:148), java.lang.Thread.run(Thread.java:748)], WAITING Mohist File IO Thread - 5: [sun.misc.Unsafe.park(Native Method), java.util.concurrent.locks.LockSupport.park(LockSupport.java:175), java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039), java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442), java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074), java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134), java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624), java.lang.Thread.run(Thread.java:748)], WAITING CQR Dungeon Generator Thread: [sun.misc.Unsafe.park(Native Method), java.util.concurrent.locks.LockSupport.park(LockSupport.java:175), java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039), java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442), team.cqr.cqrepoured.structuregen.DungeonGeneratorThread.run(DungeonGeneratorThread.java:39)], TIMED_WAITING ResearchIOThread: [java.lang.Object.wait(Native Method), java.util.TimerThread.mainLoop(Timer.java:552), java.util.TimerThread.run(Timer.java:505)], RUNNABLE Server thread: [java.lang.Thread.dumpThreads(Native Method), java.lang.Thread.getAllStackTraces(Thread.java:1610), org.bukkit.craftbukkit.v1_12_R1.CraftCrashReport.call(CraftCrashReport.java:27), net.minecraft.crash.CrashReportCategory.func_189529_a(CrashReportCategory.java:96), net.minecraft.crash.CrashReport.func_71504_g(CrashReport.java:121), net.minecraft.crash.CrashReport.<init>(CrashReport.java:42), net.minecraft.crash.CrashReport.func_85055_a(CrashReport.java:360), net.minecraft.world.WorldServer.func_184147_l(WorldServer.java:778), net.minecraft.world.World.func_72939_s(World.java:2089), net.minecraft.world.WorldServer.func_72939_s(WorldServer.java:744), net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:897), net.minecraft.server.dedicated.DedicatedServer.func_71190_q(DedicatedServer.java:461), net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:778), net.minecraft.server.MinecraftServer.run(MinecraftServer.java:624), java.lang.Thread.run(Thread.java:748)], WAITING Reference Handler: [java.lang.Object.wait(Native Method), java.lang.Object.wait(Object.java:502), java.lang.ref.Reference.tryHandlePending(Reference.java:191), java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)], RUNNABLE DestroyJavaVM: [], WAITING CQR Dungeon Generator Thread: [sun.misc.Unsafe.park(Native Method), java.util.concurrent.locks.LockSupport.park(LockSupport.java:175), java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039), java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442), team.cqr.cqrepoured.structuregen.DungeonGeneratorThread.run(DungeonGeneratorThread.java:39)], WAITING Mohist Async Task Handler Thread - 1: [sun.misc.Unsafe.park(Native Method), java.util.concurrent.locks.LockSupport.park(LockSupport.java:175), java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039), java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442), java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074), java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134), java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624), java.lang.Thread.run(Thread.java:748)], WAITING Mohist File IO Thread - 4: [sun.misc.Unsafe.park(Native Method), java.util.concurrent.locks.LockSupport.park(LockSupport.java:175), java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039), java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442), java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074), java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134), java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624), java.lang.Thread.run(Thread.java:748)], WAITING CQR Dungeon Generator Thread: [sun.misc.Unsafe.park(Native Method), java.util.concurrent.locks.LockSupport.park(LockSupport.java:175), java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039), java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442), team.cqr.cqrepoured.structuregen.DungeonGeneratorThread.run(DungeonGeneratorThread.java:39)], RUNNABLE Netty Epoll Server IO #0: [io.netty.channel.epoll.Native.epollWait0(Native Method), io.netty.channel.epoll.Native.epollWait(Native.java:114), io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:235), io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:252), io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884), java.lang.Thread.run(Thread.java:748)], TIMED_WAITING ComputerCraft-Computer-Monitor-0: [java.lang.Thread.sleep(Native Method), dan200.computercraft.core.computer.ComputerThread$Monitor.run(ComputerThread.java:364), java.lang.Thread.run(Thread.java:748)], RUNNABLE Server console handler: [java.io.FileInputStream.readBytes(Native Method), java.io.FileInputStream.read(FileInputStream.java:255), java.io.BufferedInputStream.fill(BufferedInputStream.java:246), java.io.BufferedInputStream.read(BufferedInputStream.java:265), jline.internal.NonBlockingInputStream.read(NonBlockingInputStream.java:166), jline.internal.NonBlockingInputStream.read(NonBlockingInputStream.java:135), jline.internal.NonBlockingInputStream.read(NonBlockingInputStream.java:243), jline.internal.InputStreamReader.read(InputStreamReader.java:257), jline.internal.InputStreamReader.read(InputStreamReader.java:194), jline.console.ConsoleReader.readCharacter(ConsoleReader.java:2136), jline.console.ConsoleReader.readCharacter(ConsoleReader.java:2126), jline.console.ConsoleReader.readBinding(ConsoleReader.java:2211), jline.console.ConsoleReader.readLine(ConsoleReader.java:2460), jline.console.ConsoleReader.readLine(ConsoleReader.java:2372), net.minecraft.server.dedicated.DedicatedServer$2.run(DedicatedServer.java:122)], TIMED_WAITING Server Infinisleeper: [java.lang.Thread.sleep(Native Method), net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:96)],}
+   
+	FML: MCP 9.42 Powered by Forge 14.23.5.2860 74 mods loaded, 73 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID                   | Version           | Source                                             | Signature                                |
+	|:------ |:-------------------- |:----------------- |:-------------------------------------------------- |:---------------------------------------- |
+	| LCHIJA | minecraft            | 1.12.2            | minecraft.jar                                      | None                                     |
+	| LCHIJA | mcp                  | 9.42              | minecraft.jar                                      | None                                     |
+	| LCHIJA | mohist               | 1.12.2-292        | mohist.jar                                         | None                                     |
+	| LCHIJA | FML                  | 8.0.99.99         | mohist-server.jar                                  | None                                     |
+	| LCHIJA | forge                | 14.23.5.2860      | mohist-server.jar                                  | None                                     |
+	| LCHIJA | creativecoredummy    | 1.0.0             | minecraft.jar                                      | None                                     |
+	| LCHIJA | littletilescore      | 1.0.0             | minecraft.jar                                      | None                                     |
+	| LCHIJA | bspkrscore           | 7.6.0.1           | [1.12]bspkrsCore-universal-7.6.0.1.jar             | None                                     |
+	| LCHIJA | treecapitator        | 1.43.0            | [1.12]TreeCapitator-client-1.43.0.jar              | None                                     |
+	| LCHIJA | forgeendertech       | 1.12.2-4.5.5.0    | ForgeEndertech-1.12.2-4.5.5.0-build.0561.jar       | None                                     |
+	| LCHIJA | adlods               | 1.12.2-1.0.8.0    | AdLods-1.12.2-1.0.8.0-build.0504.jar               | None                                     |
+	| LCHIJA | aether_legacy        | 1.5.3.1           | aether-1.12.2-v1.5.3.1.jar                         | None                                     |
+	| LCHIJA | appliedenergistics2  | rv6-stable-7      | appliedenergistics2-rv6-stable-7.jar               | dfa4d3ac143316c6f32aa1a1beda1e34d42132e5 |
+	| LCHIJA | baubles              | 1.5.2             | Baubles-1.12-1.5.2.jar                             | None                                     |
+	| LCHIJA | astralsorcery        | 1.10.27           | astralsorcery-1.12.2-1.10.27.jar                   | a0f0b759d895c15ceb3e3bcb5f3c2db7c582edf0 |
+	| LCHIJA | jei                  | 4.16.1.302        | jei_1.12.2-4.16.1.302.jar                          | None                                     |
+	| LCHIJA | quark                | r1.6-179          | Quark-r1.6-179.jar                                 | None                                     |
+	| LCHIJA | autoreglib           | 1.3-32            | AutoRegLib-1.3-32.jar                              | None                                     |
+	| LCHIJA | betterbuilderswands  | 0.13.2            | BetterBuildersWands-1.12.2-0.13.2.271+5997513.jar  | None                                     |
+	| LCHIJA | llibrary             | 1.7.20            | llibrary-1.7.20-1.12.2.jar                         | b9f30a813bee3b9dd5652c460310cfcd54f6b7ec |
+	| LCHIJA | mowziesmobs          | 1.5.8             | mowziesmobs-1.5.8.jar                              | None                                     |
+	| LCHIJA | patchouli            | 1.0-23.6          | Patchouli-1.0-23.6.jar                             | None                                     |
+	| LCHIJA | bewitchment          | 0.22.59           | bewitchment-1.12.2-0.0.22.59.jar                   | None                                     |
+	| LCHIJA | codechickenlib       | 3.2.3.358         | CodeChickenLib-1.12.2-3.2.3.358-universal.jar      | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+	| LCHIJA | redstoneflux         | 2.1.1             | RedstoneFlux-1.12-2.1.1.1-universal.jar            | None                                     |
+	| LCHIJA | brandonscore         | 2.4.20            | BrandonsCore-1.12.2-2.4.20.162-universal.jar       | None                                     |
+	| LCHIJA | buildcraftlib        | 7.99.24.7         | buildcraft-all-7.99.24.7.jar                       | None                                     |
+	| LCHIJA | buildcraftcore       | 7.99.24.7         | buildcraft-all-7.99.24.7.jar                       | None                                     |
+	| LCHIJA | buildcraftbuilders   | 7.99.24.7         | buildcraft-all-7.99.24.7.jar                       | None                                     |
+	| LCHIJA | buildcrafttransport  | 7.99.24.7         | buildcraft-all-7.99.24.7.jar                       | None                                     |
+	| LCHIJA | buildcraftsilicon    | 7.99.24.7         | buildcraft-all-7.99.24.7.jar                       | None                                     |
+	| LCHIJA | ic2                  | 2.8.170-ex112     | industrialcraft-2-2.8.170-ex112.jar                | de041f9f6187debbc77034a344134053277aa3b0 |
+	| LCHIJA | buildcraftcompat     | 7.99.24.7         | buildcraft-all-7.99.24.7.jar                       | None                                     |
+	| LCHIJA | buildcraftenergy     | 7.99.24.7         | buildcraft-all-7.99.24.7.jar                       | None                                     |
+	| LCHIJA | buildcraftfactory    | 7.99.24.7         | buildcraft-all-7.99.24.7.jar                       | None                                     |
+	| LCHIJA | buildcraftrobotics   | 7.99.24.7         | buildcraft-all-7.99.24.7.jar                       | None                                     |
+	| LCHIJA | cctweaked            | 1.89.2            | cc-tweaked-1.12.2-1.89.2.jar                       | None                                     |
+	| LCHIJA | computercraft        | 1.89.2            | cc-tweaked-1.12.2-1.89.2.jar                       | None                                     |
+	| LCHIJA | cqrepoured           | 2.2.4B            | Chocolate_Quest_Repoured-1.12.2-2.2.4B.jar         | None                                     |
+	| LCHIJA | chunkpregenerator    | 2.5.0             | Chunk+Pregenerator-V1.12-2.5.0.jar                 | None                                     |
+	| LCHIJA | clumps               | 3.1.2             | Clumps-3.1.2.jar                                   | None                                     |
+	| LCHIJA | cofhcore             | 4.6.6             | CoFHCore-1.12.2-4.6.6.1-universal.jar              | None                                     |
+	| LCHIJA | cofhworld            | 1.4.0             | CoFHWorld-1.12.2-1.4.0.1-universal.jar             | None                                     |
+	| LCHIJA | mantle               | 1.12-1.3.3.55     | Mantle-1.12-1.3.3.55.jar                           | None                                     |
+	| LCHIJA | twilightforest       | 3.11.1021         | twilightforest-1.12.2-3.11.1021-universal.jar      | None                                     |
+	| LCHIJA | tconstruct           | 1.12.2-2.13.0.183 | TConstruct-1.12.2-2.13.0.183.jar                   | None                                     |
+	| LCHIJA | conarm               | 1.2.5.10          | conarm-1.12.2-1.2.5.10.jar                         | b33d2c8df492beff56d1bbbc92da49b8ab7345a1 |
+	| LCHIJA | creativecore         | 1.10.0            | CreativeCore_v1.10.44_mc1.12.2.jar                 | None                                     |
+	| LCHIJA | doggytalents         | 1.15.1.6          | DoggyTalents-1.12.2-1.15.1.6.jar                   | None                                     |
+	| LCHIJA | thermalfoundation    | 2.6.7             | ThermalFoundation-1.12.2-2.6.7.1-universal.jar     | None                                     |
+	| LCHIJA | draconicevolution    | 2.3.28            | Draconic-Evolution-1.12.2-2.3.28.354-universal.jar | None                                     |
+	| LCHIJA | ebwizardry           | 4.3.4             | ElectroblobsWizardry-4.3.4-MC1.12.2.jar            | None                                     |
+	| LCHIJA | mclib                | 2.2               | mclib-2.2-1.12.2.jar                               | None                                     |
+	| LCHIJA | emoticons            | 0.7               | emoticons-0.7-1.12.2-dist.jar                      | None                                     |
+	| LCHIJA | zerocore             | 1.12.2-0.1.2.9    | zerocore-1.12.2-0.1.2.9.jar                        | None                                     |
+	| LCHIJA | bigreactors          | 1.12.2-0.4.5.68   | ExtremeReactors-1.12.2-0.4.5.68.jar                | None                                     |
+	| LCHIJA | fastbench            | 1.7.3             | FastWorkbench-1.12.2-1.7.3.jar                     | None                                     |
+	| LCHIJA | flansmod             | 5.7.1             | Flan's+Mod-1.12.2-5.7.1.jar                        | None                                     |
+	| LCHIJA | fossil               | 8.0.5             | fossilsarcheology-8.0.5.jar                        | None                                     |
+	| LCHIJA | ichunutil            | 7.2.2             | iChunUtil-1.12.2-7.2.2.jar                         | 4db5c2bd1b556f252a5b8b54b256d381b2a0a6b8 |
+	| LCHIJA | hats                 | 7.1.1             | Hats-1.12.2-7.1.1.jar                              | 4db5c2bd1b556f252a5b8b54b256d381b2a0a6b8 |
+	| LCHIJA | waila                | 1.8.26            | Hwyla-1.8.26-B41_1.12.2.jar                        | None                                     |
+	| LCHIJA | railcraft            | 12.0.0            | railcraft-12.0.0.jar                               | a0c255ac501b2749537d5824bb0f0588bf0320fa |
+	| LCHIJA | immersiveengineering | 0.12-98           | ImmersiveEngineering-0.12-98.jar                   | None                                     |
+	| LCHIJA | immersivepetroleum   | 1.1.9             | immersivepetroleum-1.12.2-1.1.9.jar                | None                                     |
+	| LCHIJA | journeymap           | 1.12.2-5.7.0      | journeymap-1.12.2-5.7.0.jar                        | None                                     |
+	| LCHIJA | littletiles          | 1.5.0             | LittleTiles_v1.5.0-pre320_mc1.12.2.jar             | None                                     |
+	| LCHIJA | lucky                | 7.6.0             | luckyblock-1.12.2-1-forge.jar                      | None                                     |
+	| LCHIJA | roguelike            | 1.8.0             | RoguelikeDungeons-1.12.2-1.8.0.jar                 | None                                     |
+	| LCHIJA | scannable            | 1.6.3.26          | Scannable-MC1.12.2-1.6.3.26.jar                    | None                                     |
+	| LCHIJA | thermalexpansion     | 5.5.7             | ThermalExpansion-1.12.2-5.5.7.1-universal.jar      | None                                     |
+	| LCHIJA | uppers               | 0.0.6             | Uppers-0.0.6.jar                                   | None                                     |
+	| LCHIJA | vanilladeathchest    | 1.12.2-1.11.0.7   | vanilladeathchest-1.12.2-1.11.0.7.jar              | 20d08fb3fe9c268a63a75d337fb507464c8aaccd |
+	| UD     | mclib_core           | 2.2               | minecraft.jar                                      | None                                     |
+
+	Loaded coremods (and transformers): 
+llibrary (llibrary-core-1.0.11-1.12.2.jar)
+  net.ilexiconn.llibrary.server.core.plugin.LLibraryTransformer
+  net.ilexiconn.llibrary.server.core.patcher.LLibraryRuntimePatcher
+LittlePatchingLoader (LittleTiles_v1.5.0-pre320_mc1.12.2.jar)
+  com.creativemd.littletiles.LittleTilesTransformer
+BewitchmentFMLLoadingPlugin (bewitchment-1.12.2-0.0.22.59.jar)
+  
+IELoadingPlugin (ImmersiveEngineering-core-0.12-98.jar)
+  blusunrize.immersiveengineering.common.asm.IEClassTransformer
+AstralCore (astralsorcery-1.12.2-1.10.27.jar)
+  
+CWGFarPlaneViewCoreMod (CWGFarPlaneView-0.4.0-core.jar)
+  cwgfarplaneview.core.CWGFPVClassTransformer
+CreativePatchingLoader (CreativeCore_v1.10.44_mc1.12.2.jar)
+  
+Quark Plugin (Quark-r1.6-179.jar)
+  vazkii.quark.base.asm.ClassTransformer
+McLib core mod (mclib-2.2-1.12.2.jar)
+  mchorse.mclib.core.McLibCMClassTransformer
+CorePlugin (ForgeEndertech-1.12.2-4.5.5.0-build.0561.jar)
+  
+	AE2 Version: stable rv6-stable-7 for Forge 14.23.5.2768
+	Pulsar/tconstruct loaded Pulses: 
+		- TinkerCommons (Enabled/Forced)
+		- TinkerWorld (Enabled/Not Forced)
+		- TinkerTools (Enabled/Not Forced)
+		- TinkerHarvestTools (Enabled/Forced)
+		- TinkerMeleeWeapons (Enabled/Forced)
+		- TinkerRangedWeapons (Enabled/Forced)
+		- TinkerModifiers (Enabled/Forced)
+		- TinkerSmeltery (Enabled/Not Forced)
+		- TinkerGadgets (Enabled/Not Forced)
+		- TinkerOredict (Enabled/Forced)
+		- TinkerIntegration (Enabled/Forced)
+		- TinkerFluids (Enabled/Forced)
+		- TinkerMaterials (Enabled/Forced)
+		- TinkerModelRegister (Enabled/Forced)
+		- wailaIntegration (Enabled/Not Forced)
+		- quarkIntegration (Enabled/Not Forced)
+
+	AE2 Integration: IC2:ON, RC:ON, MFR:OFF, Waila:ON, Mekanism:OFF, OpenComputers:OFF, THE_ONE_PROBE:OFF, TESLA:OFF, CRAFTTWEAKER:OFF
+	Profiler Position: N/A (disabled)
+	Player Count: 2 / 20; [EntityPlayerMP['Uncle_Doogie'/146, uuid='cea5d8f4-e3fd-4362-a30c-4450705a46f0', l='world', x=-576.30, y=63.00, z=-259.32, cx=-37, cd=-17, tl=228540, v=true, d=false](Uncle_Doogie at -576.3000000119209,63.0,-259.3167694912392), EntityPlayerMP['ParadoxPod'/3098, uuid='1b2e03a4-196e-4dd8-836c-cab56d00de1d', l='world', x=-1.50, y=68.00, z=19.01, cx=0, cd=12, tl=188108, v=false, d=false](ParadoxPod at -1.5,68.0,19.00924012109735)]
+	Is Modded: Definitely; Server brand changed to 'Mohist'
+	Type: Dedicated Server (map_server.txt)
