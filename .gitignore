@@ -1,0 +1,5 @@
+# Specify filepatterns you want git to ignore.
+
+# Prevent file with illegal Windows characters from being loaded
+world/DIM4/data/aether_legacycold_aercloud.dat
+world/DIM4/data/aether_legacy:cold_aercloud.dat
