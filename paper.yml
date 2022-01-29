@@ -12,14 +12,11 @@
 verbose: false
 config-version: 13
 settings:
-  min-chunk-load-threads: 2
   suggest-player-names-when-null-tab-completions: true
-  spam-limiter:
-    tab-spam-increment: 10
-    tab-spam-limit: 500
   book-size:
     page-max: 2560
     total-multiplier: 0.98
+  sleep-between-chunk-saves: false
   load-permissions-yml-before-plugins: true
   region-file-cache-size: 256
   enable-player-collisions: true
@@ -30,13 +27,16 @@ settings:
   remove-invalid-statistics: false
   save-player-data: true
   use-alternative-luck-formula: false
-  sleep-between-chunk-saves: false
+  min-chunk-load-threads: 2
+  spam-limiter:
+    tab-spam-increment: 10
+    tab-spam-limit: 500
   bungee-online-mode: true
 messages:
   kick:
+    authentication-servers-down: ''
     flying-player: Flying is not enabled on this server
     flying-vehicle: Flying is not enabled on this server
-    authentication-servers-down: ''
 timings:
   enabled: true
   verbose: true

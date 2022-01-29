@@ -12,14 +12,13 @@
 
 config-version: 11
 settings:
+  bungeecord: false
+  save-user-cache-on-stop-only: false
+  sample-count: 12
+  player-shuffle: 0
+  user-cache-size: 1000
   late-bind: false
-  attribute:
-    maxHealth:
-      max: 2048.0
-    movementSpeed:
-      max: 2048.0
-    attackDamage:
-      max: 2048.0
+  filter-creative-items: true
   int-cache-limit: 1024
   moved-wrongly-threshold: 0.0625
   moved-too-quickly-multiplier: 10.0
@@ -28,35 +27,44 @@ settings:
   restart-on-crash: true
   restart-script: ./launch.sh
   netty-threads: 4
-  bungeecord: false
-  filter-creative-items: true
-  save-user-cache-on-stop-only: false
-  sample-count: 12
-  player-shuffle: 0
-  user-cache-size: 1000
+  attribute:
+    maxHealth:
+      max: 2048.0
+    movementSpeed:
+      max: 2048.0
+    attackDamage:
+      max: 2048.0
+stats:
+  disable-saving: false
+  forced-stats: {}
 commands:
+  tab-complete: 0
+  silent-commandblock-console: false
+  spam-exclusions:
+  - /skill
   replace-commands:
   - setblock
   - summon
   - testforblock
   - tellraw
   log: true
-  spam-exclusions:
-  - /skill
-  tab-complete: 0
-  silent-commandblock-console: false
-messages:
-  restart: Server is restarting
-stats:
-  disable-saving: false
-  forced-stats: {}
 advancements:
   disable-saving: false
   disabled:
   - minecraft:story/disabled
+messages:
+  restart: Server is restarting
 world-settings:
   default:
     verbose: false
+    max-tick-time:
+      tile: 1000
+      entity: 1000
+    squid-spawn-range:
+      min: 45.0
+    max-growth-height:
+      cactus: 3
+      reeds: 3
     growth:
       cactus-modifier: 100
       cane-modifier: 100
@@ -94,24 +102,16 @@ world-settings:
       sprint-multiplier: 0.1
       other-multiplier: 0.0
     max-tnt-per-tick: 100
-    max-tick-time:
-      tile: 1000
-      entity: 1000
-    squid-spawn-range:
-      min: 45.0
-    max-growth-height:
-      cactus: 3
-      reeds: 3
     mob-spawn-range: 4
-    wither-spawn-sound-radius: 0
-    view-distance: 10
     merge-radius:
       exp: 3.0
       item: 2.5
     item-despawn-rate: 6000
     arrow-despawn-rate: 1200
-    hanging-tick-frequency: 100
     enable-zombie-pigmen-portal-spawns: true
+    wither-spawn-sound-radius: 0
+    view-distance: 10
+    hanging-tick-frequency: 100
     zombie-aggressive-towards-villager: true
     nerf-spawner-mobs: false
     entity-tracking-range:

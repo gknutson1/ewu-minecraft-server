@@ -203,15 +203,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/black_stained_hardened_clay": {
-    "criteria": {
-      "has_the_recipe": "2021-12-24 03:27:29 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/misc/map": {
     "criteria": {
       "has_the_recipe": "2021-12-24 03:27:28 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/black_stained_hardened_clay": {
+    "criteria": {
+      "has_the_recipe": "2021-12-24 03:27:29 +0000"
     },
     "done": true
   },
@@ -329,15 +329,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/food/cake": {
-    "criteria": {
-      "has_the_recipe": "2021-12-24 03:27:29 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/dark_oak_planks": {
     "criteria": {
       "has_the_recipe": "2021-12-24 03:27:28 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cake": {
+    "criteria": {
+      "has_the_recipe": "2021-12-24 03:27:29 +0000"
     },
     "done": true
   },
@@ -737,15 +737,15 @@
     },
     "done": true
   },
-  "aether_legacy:recipes/decorations/ambrosium_torch": {
-    "criteria": {
-      "has_the_recipe": "2021-12-24 03:27:29 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/jungle_fence": {
     "criteria": {
       "has_the_recipe": "2021-12-24 03:27:28 +0000"
+    },
+    "done": true
+  },
+  "aether_legacy:recipes/decorations/ambrosium_torch": {
+    "criteria": {
+      "has_the_recipe": "2021-12-24 03:27:29 +0000"
     },
     "done": true
   },
@@ -1464,15 +1464,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/book": {
-    "criteria": {
-      "has_the_recipe": "2021-12-24 03:27:29 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/purple_bed_from_white_bed": {
     "criteria": {
       "has_the_recipe": "2021-12-24 03:27:28 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/book": {
+    "criteria": {
+      "has_the_recipe": "2021-12-24 03:27:29 +0000"
     },
     "done": true
   },
@@ -1854,15 +1854,15 @@
     },
     "done": true
   },
-  "computercraft:recipes/generated/pocket_advanced/computercraft_advanced_modem": {
-    "criteria": {
-      "has_the_recipe": "2021-12-24 03:27:29 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/slime": {
     "criteria": {
       "has_the_recipe": "2021-12-24 03:27:28 +0000"
+    },
+    "done": true
+  },
+  "computercraft:recipes/generated/pocket_advanced/computercraft_advanced_modem": {
+    "criteria": {
+      "has_the_recipe": "2021-12-24 03:27:29 +0000"
     },
     "done": true
   },

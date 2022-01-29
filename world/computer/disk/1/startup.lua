@@ -1,3 +1,8 @@
+if not fs.exists("/disk/.noUpdate") then
+	shell.execute("/disk/updater")
+else
+	fs.delete("/disk/.noUpdate")
+end
 fs.delete("/.settings")
 fs.delete("/programs")
 fs.delete("/modules")
@@ -18,4 +23,3 @@ end
 if fs.exists("/disk/startup.lua") then
     shell.execute("startup.lua")
 end
-os.loadAPI("include.lua")
