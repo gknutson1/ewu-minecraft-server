@@ -233,6 +233,12 @@
     },
     "done": true
   },
+  "minecraft:story/shiny_gear": {
+    "criteria": {
+      "diamond_helmet": "2022-02-03 20:23:29 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/magenta_stained_glass_pane": {
     "criteria": {
       "has_the_recipe": "2021-12-26 20:17:59 +0000"
@@ -509,6 +515,12 @@
     },
     "done": true
   },
+  "ebwizardry:handbook/scrolls": {
+    "criteria": {
+      "criteria_0": "2022-02-03 20:37:05 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/emerald": {
     "criteria": {
       "has_the_recipe": "2021-12-26 20:17:59 +0000"
@@ -584,6 +596,14 @@
   "minecraft:recipes/building_blocks/gold_block": {
     "criteria": {
       "has_the_recipe": "2021-12-26 20:17:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/obtain_armor": {
+    "criteria": {
+      "iron_boots": "2022-02-03 20:25:06 +0000",
+      "iron_chestplate": "2022-02-03 20:25:06 +0000",
+      "iron_helmet": "2022-02-03 20:25:06 +0000"
     },
     "done": true
   },
@@ -763,7 +783,10 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
-      "skeleton": "2021-12-26 20:31:53 +0000"
+      "vindicator": "2022-02-03 19:43:56 +0000",
+      "skeleton": "2021-12-26 20:31:53 +0000",
+      "evoker": "2022-02-03 20:42:31 +0000",
+      "zombie": "2022-02-03 20:06:49 +0000"
     },
     "done": false
   },
@@ -875,6 +898,18 @@
     },
     "done": true
   },
+  "buildcraftcore:root": {
+    "criteria": {
+      "has_stick": "2022-02-03 19:55:16 +0000"
+    },
+    "done": true
+  },
+  "cqrepoured:cqr/ha_got_you": {
+    "criteria": {
+      "illager": "2022-02-03 20:18:04 +0000"
+    },
+    "done": true
+  },
   "aether_legacy:recipes/combat/skyroot_sword": {
     "criteria": {
       "has_the_recipe": "2021-12-26 20:17:59 +0000"
@@ -962,6 +997,12 @@
   "minecraft:recipes/combat/golden_chestplate": {
     "criteria": {
       "has_the_recipe": "2021-12-26 20:17:59 +0000"
+    },
+    "done": true
+  },
+  "twilightforest:alt/compat/ie_shaders": {
+    "criteria": {
+      "ie_shader_bag": "2022-02-03 20:48:17 +0000"
     },
     "done": true
   },
@@ -1163,6 +1204,12 @@
     },
     "done": true
   },
+  "cqrepoured:cqr/bosses/kill_giant_spider": {
+    "criteria": {
+      "boss": "2022-02-03 20:48:00 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/golden_rail": {
     "criteria": {
       "has_the_recipe": "2021-12-26 20:17:59 +0000"
@@ -1301,6 +1348,12 @@
     },
     "done": true
   },
+  "minecraft:story/iron_tools": {
+    "criteria": {
+      "iron_pickaxe": "2022-02-03 19:57:45 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/orange_banner": {
     "criteria": {
       "has_the_recipe": "2021-12-26 20:17:59 +0000"
@@ -1346,6 +1399,12 @@
   "minecraft:recipes/building_blocks/prismarine_bricks": {
     "criteria": {
       "has_the_recipe": "2021-12-26 20:17:59 +0000"
+    },
+    "done": true
+  },
+  "bewitchment:broom": {
+    "criteria": {
+      "juniper": "2022-02-03 19:43:35 +0000"
     },
     "done": true
   },
@@ -1437,12 +1496,20 @@
     "criteria": {
       "forest": "2021-12-27 19:53:39 +0000",
       "swampland": "2021-12-27 19:53:14 +0000",
+      "birch_forest": "2022-02-07 19:08:56 +0000",
+      "beaches": "2022-02-07 19:10:37 +0000",
       "extreme_hills_with_trees": "2021-12-26 20:26:23 +0000",
       "forest_hills": "2021-12-27 19:53:34 +0000",
       "plains": "2021-12-26 20:18:20 +0000",
+      "savanna": "2022-02-07 19:10:34 +0000",
+      "taiga": "2022-02-03 19:50:11 +0000",
+      "taiga_hills": "2022-02-03 19:50:05 +0000",
+      "ocean": "2022-02-07 19:11:00 +0000",
       "extreme_hills": "2021-12-26 20:19:37 +0000",
       "roofed_forest": "2021-12-27 19:53:17 +0000",
-      "river": "2021-12-26 20:17:59 +0000"
+      "river": "2021-12-26 20:17:59 +0000",
+      "desert": "2022-02-07 19:31:42 +0000",
+      "stone_beach": "2022-02-07 19:04:19 +0000"
     },
     "done": false
   },
@@ -1536,6 +1603,12 @@
     },
     "done": true
   },
+  "buildcraftlib:recipes/guide_book": {
+    "criteria": {
+      "has_paper": "2022-02-10 19:43:35 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/brown_stained_glass": {
     "criteria": {
       "has_the_recipe": "2021-12-26 20:17:59 +0000"
@@ -1575,6 +1648,18 @@
   "aether_legacy:recipes/building_blocks/hellfire_slab": {
     "criteria": {
       "has_the_recipe": "2021-12-26 20:17:59 +0000"
+    },
+    "done": true
+  },
+  "ebwizardry:handbook/throwables": {
+    "criteria": {
+      "criteria_0": "2022-02-03 20:22:28 +0000"
+    },
+    "done": true
+  },
+  "appliedenergistics2:main/root": {
+    "criteria": {
+      "certus": "2022-02-03 20:50:33 +0000"
     },
     "done": true
   },
@@ -2151,7 +2236,13 @@
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
       "beef": "2021-12-27 19:52:13 +0000",
-      "rotten_flesh": "2021-12-27 19:52:27 +0000"
+      "apple": "2022-02-07 19:22:29 +0000",
+      "cooked_cod": "2022-02-10 19:45:42 +0000",
+      "melon": "2022-02-03 20:48:07 +0000",
+      "bread": "2022-02-03 20:04:25 +0000",
+      "rotten_flesh": "2021-12-27 19:52:27 +0000",
+      "cookie": "2022-02-07 19:18:55 +0000",
+      "carrot": "2022-02-03 20:34:18 +0000"
     },
     "done": false
   },
@@ -2275,6 +2366,12 @@
     },
     "done": true
   },
+  "minecraft:nether/get_wither_skull": {
+    "criteria": {
+      "wither_skull": "2022-02-03 20:51:19 +0000"
+    },
+    "done": true
+  },
   "computercraft:recipes/advanced_monitor": {
     "criteria": {
       "has_the_recipe": "2021-12-26 20:17:59 +0000"
@@ -2332,6 +2429,12 @@
   "minecraft:recipes/decorations/orange_carpet": {
     "criteria": {
       "has_the_recipe": "2021-12-26 20:17:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/mine_stone": {
+    "criteria": {
+      "get_stone": "2022-02-02 20:54:24 +0000"
     },
     "done": true
   },
@@ -2689,6 +2792,12 @@
     },
     "done": true
   },
+  "ebwizardry:wizard_tower": {
+    "criteria": {
+      "criteria_0": "2022-02-07 19:06:42 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/lapis_lazuli": {
     "criteria": {
       "has_the_recipe": "2021-12-26 20:17:59 +0000"
@@ -2698,6 +2807,12 @@
   "minecraft:recipes/building_blocks/magenta_stained_glass": {
     "criteria": {
       "has_the_recipe": "2021-12-26 20:17:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/mine_diamond": {
+    "criteria": {
+      "diamond": "2022-02-03 20:46:10 +0000"
     },
     "done": true
   },
@@ -2856,6 +2971,13 @@
       "has_the_recipe": "2021-12-26 20:17:59 +0000"
     },
     "done": true
+  },
+  "ebwizardry:all_spells": {
+    "criteria": {
+      "summon_zombie": "2022-02-03 20:44:48 +0000",
+      "lightning_arrow": "2022-02-03 20:45:17 +0000"
+    },
+    "done": false
   },
   "minecraft:recipes/tools/diamond_axe": {
     "criteria": {
@@ -3049,6 +3171,12 @@
     },
     "done": true
   },
+  "cqrepoured:cqr/challenger": {
+    "criteria": {
+      "giant_spider": "2022-02-03 20:48:00 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/smooth_red_sandstone": {
     "criteria": {
       "has_the_recipe": "2021-12-26 20:17:59 +0000"
@@ -3070,6 +3198,12 @@
   "aether_legacy:recipes/tools/holystone_axe": {
     "criteria": {
       "has_the_recipe": "2021-12-26 20:17:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2022-02-03 19:52:47 +0000"
     },
     "done": true
   },
@@ -3163,6 +3297,12 @@
     },
     "done": true
   },
+  "ebwizardry:discover_spell": {
+    "criteria": {
+      "criteria_0": "2022-02-03 20:44:48 +0000"
+    },
+    "done": true
+  },
   "aether_legacy:recipes/combat/poison_dart": {
     "criteria": {
       "has_the_recipe": "2021-12-26 20:17:59 +0000"
@@ -3181,6 +3321,12 @@
     },
     "done": true
   },
+  "buildcraftenergy:fine_riches": {
+    "criteria": {
+      "oil_desert_biome": "2022-02-07 19:31:47 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/pink_stained_hardened_clay": {
     "criteria": {
       "has_the_recipe": "2021-12-26 20:17:59 +0000"
@@ -3196,6 +3342,12 @@
   "minecraft:recipes/misc/magenta_dye_from_allium": {
     "criteria": {
       "has_the_recipe": "2021-12-26 20:17:59 +0000"
+    },
+    "done": true
+  },
+  "ebwizardry:handbook/spells": {
+    "criteria": {
+      "criteria_0": "2022-02-03 20:37:05 +0000"
     },
     "done": true
   },
@@ -3232,6 +3384,12 @@
   "minecraft:recipes/transportation/jungle_boat": {
     "criteria": {
       "has_the_recipe": "2021-12-26 20:17:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/shoot_arrow": {
+    "criteria": {
+      "shot_arrow": "2022-02-03 20:39:32 +0000"
     },
     "done": true
   },
@@ -3313,11 +3471,23 @@
     },
     "done": true
   },
+  "ebwizardry:handbook/magical_creatures": {
+    "criteria": {
+      "summon_zombie": "2022-02-03 20:44:48 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/brown_bed_from_white_bed": {
     "criteria": {
       "has_the_recipe": "2021-12-26 20:17:59 +0000"
     },
     "done": true
+  },
+  "cqrepoured:cqr/champion": {
+    "criteria": {
+      "giant_spider": "2022-02-03 20:48:00 +0000"
+    },
+    "done": false
   },
   "minecraft:recipes/building_blocks/lit_pumpkin": {
     "criteria": {
@@ -3412,6 +3582,12 @@
   "minecraft:recipes/building_blocks/nether_brick": {
     "criteria": {
       "has_the_recipe": "2021-12-26 20:17:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/smelt_iron": {
+    "criteria": {
+      "iron": "2022-02-03 20:05:59 +0000"
     },
     "done": true
   },

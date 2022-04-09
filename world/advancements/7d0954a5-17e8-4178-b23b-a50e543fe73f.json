@@ -101,6 +101,12 @@
     },
     "done": true
   },
+  "fossil:fossil/ancient_clock": {
+    "criteria": {
+      "killed": "2022-02-05 00:45:31 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/yellow_concrete_powder": {
     "criteria": {
       "has_gravel": "2022-01-15 01:24:13 +0000"
@@ -196,6 +202,12 @@
   "minecraft:end/elytra": {
     "criteria": {
       "elytra": "2022-01-26 06:32:24 +0000"
+    },
+    "done": true
+  },
+  "fossil:fossil/anu_statue": {
+    "criteria": {
+      "entered_end_gateway": "2022-02-05 00:23:23 +0000"
     },
     "done": true
   },
@@ -421,6 +433,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/emerald": {
+    "criteria": {
+      "has_emerald_block": "2022-02-04 00:44:50 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/yellow_stained_glass": {
     "criteria": {
       "has_glass": "2022-01-16 07:40:43 +0000"
@@ -483,6 +501,12 @@
     },
     "done": true
   },
+  "aether_legacy:recipes/misc/yellow_cape": {
+    "criteria": {
+      "has_yellow_wool": "2022-02-04 00:35:16 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/comparator": {
     "criteria": {
       "has_quartz": "2022-01-16 03:35:43 +0000"
@@ -504,6 +528,12 @@
   "minecraft:recipes/brewing/cauldron": {
     "criteria": {
       "has_water_bucket": "2022-01-16 07:59:43 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/chest_minecart": {
+    "criteria": {
+      "has_minecart": "2022-02-06 22:19:12 +0000"
     },
     "done": true
   },
@@ -570,6 +600,12 @@
   "minecraft:recipes/building_blocks/quartz_stairs": {
     "criteria": {
       "has_quartz_block": "2022-01-23 23:04:24 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/red_carpet": {
+    "criteria": {
+      "has_red_wool": "2022-02-04 00:35:15 +0000"
     },
     "done": true
   },
@@ -657,6 +693,7 @@
       "silverfish": "2022-01-18 04:06:56 +0000",
       "cave_spider": "2022-01-24 03:51:14 +0000",
       "witch": "2022-01-15 01:28:38 +0000",
+      "guardian": "2022-01-31 03:58:40 +0000",
       "spider": "2022-01-14 20:15:09 +0000",
       "ghast": "2022-01-18 04:31:55 +0000",
       "creeper": "2022-01-15 01:28:47 +0000",
@@ -685,6 +722,12 @@
   "minecraft:recipes/redstone/redstone_block": {
     "criteria": {
       "has_at_least_9_redstone": "2022-01-15 06:57:36 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/yellow_banner": {
+    "criteria": {
+      "has_yellow_wool": "2022-02-04 00:35:16 +0000"
     },
     "done": true
   },
@@ -751,6 +794,12 @@
   "buildcraftcore:root": {
     "criteria": {
       "has_stick": "2022-01-14 20:24:11 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/yellow_bed": {
+    "criteria": {
+      "has_yellow_wool": "2022-02-04 00:35:16 +0000"
     },
     "done": true
   },
@@ -886,6 +935,12 @@
     },
     "done": true
   },
+  "fossil:fossil/kill_anu": {
+    "criteria": {
+      "killed": "2022-02-05 00:43:30 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/light_gray_dye_from_gray_bonemeal": {
     "criteria": {
       "has_bonemeal": "2022-01-16 05:52:59 +0000"
@@ -895,6 +950,12 @@
   "minecraft:recipes/misc/leather": {
     "criteria": {
       "has_rabbit_hide": "2022-01-20 23:58:33 +0000"
+    },
+    "done": true
+  },
+  "aether_legacy:recipes/misc/red_cape": {
+    "criteria": {
+      "has_red_wool": "2022-02-04 00:35:15 +0000"
     },
     "done": true
   },
@@ -919,6 +980,12 @@
   "minecraft:recipes/building_blocks/quartz_slab": {
     "criteria": {
       "has_quartz_block": "2022-01-23 23:04:24 +0000"
+    },
+    "done": true
+  },
+  "ebwizardry:advanced": {
+    "criteria": {
+      "lightning": "2022-02-03 21:44:36 +0000"
     },
     "done": true
   },
@@ -1000,6 +1067,12 @@
     },
     "done": true
   },
+  "cqrepoured:cqr/bosses/kill_lich": {
+    "criteria": {
+      "boss": "2022-02-03 21:22:39 +0000"
+    },
+    "done": true
+  },
   "aether_legacy:recipes/misc/white_cape": {
     "criteria": {
       "has_white_wool": "2022-01-14 21:15:08 +0000"
@@ -1078,6 +1151,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/jungle_planks": {
+    "criteria": {
+      "has_log": "2022-01-30 10:17:25 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/black_banner": {
     "criteria": {
       "has_black_wool": "2022-01-15 01:41:58 +0000"
@@ -1087,6 +1166,12 @@
   "ebwizardry:defeat_evil_wizard": {
     "criteria": {
       "criteria_0": "2022-01-16 06:52:53 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/red_banner": {
+    "criteria": {
+      "has_red_wool": "2022-02-04 00:35:15 +0000"
     },
     "done": true
   },
@@ -1150,6 +1235,12 @@
     },
     "done": true
   },
+  "appliedenergistics2:main/presses": {
+    "criteria": {
+      "logic": "2022-01-30 01:04:25 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/birch_fence_gate": {
     "criteria": {
       "has_planks": "2022-01-16 07:05:05 +0000"
@@ -1180,6 +1271,12 @@
     },
     "done": true
   },
+  "minecraft:adventure/totem_of_undying": {
+    "criteria": {
+      "used_totem": "2022-02-05 00:57:29 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/yellow_wool": {
     "criteria": {
       "has_white_wool": "2022-01-14 21:15:08 +0000"
@@ -1189,6 +1286,12 @@
   "aether_legacy:recipes/decorations/skyroot_fence_gate": {
     "criteria": {
       "has_planks": "2022-01-20 07:46:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine_bricks": {
+    "criteria": {
+      "has_prismarine_shard": "2022-01-31 04:19:43 +0000"
     },
     "done": true
   },
@@ -1240,6 +1343,12 @@
     },
     "done": true
   },
+  "astralsorcery:rock_crystals": {
+    "criteria": {
+      "rock_crystal_in_inventory": "2022-02-04 08:46:40 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/sticky_piston": {
     "criteria": {
       "has_slime_ball": "2022-01-14 20:41:14 +0000"
@@ -1269,6 +1378,8 @@
       "desert_hills": "2022-01-19 04:37:47 +0000",
       "forest_hills": "2022-01-16 03:42:15 +0000",
       "plains": "2022-01-14 20:12:07 +0000",
+      "jungle_hills": "2022-02-04 00:23:59 +0000",
+      "jungle_edge": "2022-02-04 00:22:43 +0000",
       "taiga": "2022-01-19 03:09:53 +0000",
       "redwood_taiga": "2022-01-21 00:01:22 +0000",
       "taiga_hills": "2022-01-21 00:03:45 +0000",
@@ -1469,6 +1580,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/yellow_carpet": {
+    "criteria": {
+      "has_yellow_wool": "2022-02-04 00:35:16 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/brick_slab": {
     "criteria": {
       "has_brick_block": "2022-01-14 21:40:14 +0000"
@@ -1481,15 +1598,39 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/tnt_minecart": {
+    "criteria": {
+      "has_minecart": "2022-02-06 22:19:12 +0000"
+    },
+    "done": true
+  },
+  "computercraft:recipes/advanced_pocket_computer": {
+    "criteria": {
+      "has_apple": "2022-01-30 02:18:44 +0000"
+    },
+    "done": true
+  },
   "railcraft:tracks/root": {
     "criteria": {
       "get_brick": "2022-01-14 21:40:12 +0000"
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/prismarine": {
+    "criteria": {
+      "has_prismarine_shard": "2022-01-31 04:19:43 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/diamond": {
     "criteria": {
       "has_diamond_block": "2022-01-22 01:08:42 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bone_meal_from_block": {
+    "criteria": {
+      "has_bone_block": "2022-02-04 03:42:52 +0000"
     },
     "done": true
   },
@@ -1631,6 +1772,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/furnace_minecart": {
+    "criteria": {
+      "has_minecart": "2022-02-06 22:19:12 +0000"
+    },
+    "done": true
+  },
   "aether_legacy:recipes/building_blocks/skyroot_bookshelf": {
     "criteria": {
       "has_book": "2022-01-15 20:02:55 +0000"
@@ -1643,9 +1790,21 @@
     },
     "done": true
   },
+  "fossil:fossil/anubite": {
+    "criteria": {
+      "killed_by": "2022-02-05 00:24:21 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/rabbit_stew_from_red_mushroom": {
     "criteria": {
       "has_cooked_rabbit": "2022-01-22 12:09:48 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_prismarine": {
+    "criteria": {
+      "has_prismarine_shard": "2022-01-31 04:19:43 +0000"
     },
     "done": true
   },
@@ -1682,6 +1841,12 @@
   "minecraft:recipes/misc/iron_nugget": {
     "criteria": {
       "has_iron_ingot": "2022-01-15 00:47:08 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/hopper_minecart": {
+    "criteria": {
+      "has_minecart": "2022-02-06 22:19:12 +0000"
     },
     "done": true
   },
@@ -1802,9 +1967,11 @@
       "cooked_cod": "2022-01-22 11:31:28 +0000",
       "raw_salmon": "2022-01-23 06:37:00 +0000",
       "bread": "2022-01-17 02:52:13 +0000",
+      "golden_apple": "2022-01-30 02:20:24 +0000",
       "rotten_flesh": "2022-01-14 20:23:22 +0000",
       "cooked_rabbit": "2022-01-27 22:10:02 +0000",
       "cooked_chicken": "2022-01-16 08:22:16 +0000",
+      "enchanted_golden_apple": "2022-02-03 21:18:40 +0000",
       "cooked_salmon": "2022-01-22 09:41:18 +0000",
       "carrot": "2022-01-21 02:37:21 +0000"
     },
@@ -2050,7 +2217,8 @@
       "charm_storm": "2022-01-19 03:06:33 +0000",
       "amulet_ice_immunity": "2022-01-29 04:15:26 +0000",
       "charm_growth": "2022-01-16 07:19:46 +0000",
-      "amulet_channeling": "2022-01-20 21:00:07 +0000"
+      "amulet_channeling": "2022-01-20 21:00:07 +0000",
+      "amulet_auto_shield": "2022-02-03 23:56:32 +0000"
     },
     "done": false
   },
@@ -2063,6 +2231,12 @@
   "aether_legacy:recipes/combat/holystone_sword": {
     "criteria": {
       "has_stone": "2022-01-19 21:59:41 +0000"
+    },
+    "done": true
+  },
+  "mowziesmobs:kill_foliaath": {
+    "criteria": {
+      "foliaath": "2022-02-04 01:00:08 +0000"
     },
     "done": true
   },
@@ -2201,6 +2375,12 @@
   "aether_legacy:recipes/misc/skyroot_stick": {
     "criteria": {
       "has_planks": "2022-01-20 07:46:12 +0000"
+    },
+    "done": true
+  },
+  "bewitchment:crafted_altar": {
+    "criteria": {
+      "stone": "2022-01-31 04:10:29 +0000"
     },
     "done": true
   },
@@ -2407,22 +2587,32 @@
   },
   "ebwizardry:all_spells": {
     "criteria": {
+      "plague_of_darkness": "2022-02-03 21:53:45 +0000",
       "satiety": "2022-01-29 03:59:12 +0000",
       "spark_bomb": "2022-01-22 03:44:53 +0000",
+      "frost_ray": "2022-02-03 22:25:21 +0000",
+      "greater_heal": "2022-02-03 21:58:10 +0000",
       "greater_fireball": "2022-01-29 03:54:02 +0000",
       "freeze": "2022-01-17 02:24:30 +0000",
       "metamorphosis": "2022-01-29 03:42:50 +0000",
+      "flame_ray": "2022-02-03 23:48:00 +0000",
       "pocket_furnace": "2022-01-18 22:03:14 +0000",
+      "radiant_totem": "2022-02-03 21:58:12 +0000",
       "paralysis": "2022-01-29 03:23:31 +0000",
+      "chain_lightning": "2022-02-03 21:58:17 +0000",
+      "permafrost": "2022-02-03 23:57:53 +0000",
       "light": "2022-01-29 03:38:10 +0000",
       "transience": "2022-01-29 03:47:22 +0000",
       "snowball": "2022-01-17 02:12:51 +0000",
+      "arcane_jammer": "2022-02-03 21:58:08 +0000",
       "lightning_bolt": "2022-01-29 06:56:49 +0000",
       "shield": "2022-01-29 03:54:25 +0000",
+      "muffle": "2022-01-30 01:32:27 +0000",
       "thunderbolt": "2022-01-21 21:43:03 +0000",
       "summon_zombie": "2022-01-17 02:12:53 +0000",
       "ward": "2022-01-17 02:17:38 +0000",
       "lightning_sigil": "2022-01-21 23:40:36 +0000",
+      "slime": "2022-01-30 02:48:14 +0000",
       "dart": "2022-01-17 02:12:11 +0000",
       "ice_age": "2022-01-29 03:59:36 +0000",
       "arc": "2022-01-20 02:21:39 +0000",
@@ -2432,12 +2622,16 @@
       "fireball": "2022-01-22 03:43:48 +0000",
       "mine": "2022-01-17 02:20:54 +0000",
       "poison": "2022-01-22 03:44:52 +0000",
+      "blizzard": "2022-02-03 21:59:29 +0000",
+      "phase_step": "2022-02-03 23:47:51 +0000",
       "poison_bomb": "2022-01-29 03:35:51 +0000",
       "summon_snow_golem": "2022-01-22 03:44:11 +0000",
+      "speed_time": "2022-02-03 21:52:34 +0000",
       "fire_sigil": "2022-01-22 03:44:09 +0000",
       "conjure_pickaxe": "2022-01-22 03:47:18 +0000",
       "ignite": "2022-01-17 02:21:03 +0000",
       "invigorating_presence": "2022-01-22 03:46:16 +0000",
+      "silverfish_swarm": "2022-02-03 21:54:27 +0000",
       "greater_telekinesis": "2022-01-29 03:46:58 +0000",
       "snare": "2022-01-19 05:21:53 +0000",
       "magic_missile": "2022-01-15 20:20:19 +0000",
@@ -2447,15 +2641,19 @@
       "mind_trick": "2022-01-17 02:22:31 +0000",
       "darkvision": "2022-01-24 04:53:35 +0000",
       "firebolt": "2022-01-24 04:53:34 +0000",
+      "combustion_rune": "2022-01-30 01:33:24 +0000",
       "smoke_bomb": "2022-01-15 20:18:15 +0000",
       "ice_statue": "2022-01-22 03:44:55 +0000",
       "firebomb": "2022-01-22 03:44:03 +0000",
       "ice_shard": "2022-01-22 03:44:13 +0000",
       "conjure_block": "2022-01-17 02:18:29 +0000",
+      "remove_curse": "2022-02-03 21:55:31 +0000",
       "agility": "2022-01-29 08:34:49 +0000",
       "dragon_fireball": "2022-01-29 07:35:56 +0000",
+      "fireskin": "2022-02-03 23:47:50 +0000",
       "group_heal": "2022-01-29 06:57:22 +0000",
       "telekinesis": "2022-01-29 03:53:27 +0000",
+      "blink": "2022-02-03 23:49:09 +0000",
       "pocket_workbench": "2022-01-22 03:46:19 +0000",
       "heal": "2022-01-21 21:46:58 +0000",
       "frost_sigil": "2022-01-29 08:36:41 +0000",
@@ -2639,6 +2837,12 @@
     },
     "done": true
   },
+  "cqrepoured:cqr/challenger": {
+    "criteria": {
+      "lich": "2022-02-03 21:22:39 +0000"
+    },
+    "done": true
+  },
   "immersiveengineering:main/craft_revolver": {
     "criteria": {
       "craft_hammer": "2022-01-28 03:18:43 +0000"
@@ -2678,6 +2882,12 @@
   "minecraft:recipes/misc/coal": {
     "criteria": {
       "has_coal_block": "2022-01-27 08:30:14 +0000"
+    },
+    "done": true
+  },
+  "computercraft:recipes/normal_pocket_computer": {
+    "criteria": {
+      "has_apple": "2022-01-30 02:18:44 +0000"
     },
     "done": true
   },
@@ -2825,6 +3035,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/red_bed": {
+    "criteria": {
+      "has_red_wool": "2022-02-04 00:35:15 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/iron_ingot_from_nuggets": {
     "criteria": {
       "has_at_least_9_iron_nugget": "2022-01-27 04:38:26 +0000"
@@ -2885,6 +3101,12 @@
     },
     "done": true
   },
+  "ebwizardry:identify_spell": {
+    "criteria": {
+      "criteria_0": "2022-02-04 05:41:50 +0000"
+    },
+    "done": true
+  },
   "bewitchment:mined_coquina": {
     "criteria": {
       "hat": "2022-01-18 02:23:24 +0000"
@@ -2927,6 +3149,12 @@
     },
     "done": true
   },
+  "cqrepoured:cqr/champion": {
+    "criteria": {
+      "lich": "2022-02-03 21:22:39 +0000"
+    },
+    "done": false
+  },
   "minecraft:recipes/building_blocks/polished_granite": {
     "criteria": {
       "has_stone": "2022-01-15 19:33:40 +0000"
@@ -2966,6 +3194,12 @@
   "bewitchment:mined_silver": {
     "criteria": {
       "hat": "2022-01-14 21:19:02 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/rail": {
+    "criteria": {
+      "has_minecart": "2022-02-06 22:19:12 +0000"
     },
     "done": true
   },
@@ -3050,6 +3284,12 @@
   "minecraft:recipes/decorations/light_gray_stained_glass_pane": {
     "criteria": {
       "has_glass": "2022-01-16 07:40:43 +0000"
+    },
+    "done": true
+  },
+  "ebwizardry:enchant_scroll": {
+    "criteria": {
+      "criteria_0": "2022-02-03 23:48:20 +0000"
     },
     "done": true
   },

@@ -125,6 +125,12 @@
     },
     "done": true
   },
+  "fossil:fossil/ancient_clock": {
+    "criteria": {
+      "killed": "2022-02-05 00:44:44 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/yellow_concrete_powder": {
     "criteria": {
       "has_gravel": "2021-12-23 05:55:33 +0000"
@@ -236,6 +242,12 @@
   "minecraft:recipes/building_blocks/red_sandstone": {
     "criteria": {
       "has_the_recipe": "2021-12-25 00:17:51 +0000"
+    },
+    "done": true
+  },
+  "fossil:fossil/anu_statue": {
+    "criteria": {
+      "entered_end_gateway": "2022-02-05 00:23:32 +0000"
     },
     "done": true
   },
@@ -491,6 +503,12 @@
     },
     "done": true
   },
+  "fossil:fossil/fossil_seed": {
+    "criteria": {
+      "fossil_fern_seed": "2022-02-05 01:10:48 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/yellow_stained_glass": {
     "criteria": {
       "has_the_recipe": "2021-12-25 00:17:51 +0000"
@@ -727,7 +745,9 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
+      "zombie_pigman": "2022-02-05 00:28:55 +0000",
       "zombie_villager": "2021-12-23 07:15:36 +0000",
+      "slime": "2022-02-05 01:02:58 +0000",
       "vindicator": "2021-12-23 04:40:19 +0000",
       "skeleton": "2021-12-23 06:23:22 +0000",
       "husk": "2021-12-23 07:03:50 +0000",
@@ -868,6 +888,12 @@
     },
     "done": true
   },
+  "minecraft:story/follow_ender_eye": {
+    "criteria": {
+      "in_stronghold": "2022-02-04 21:53:15 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/light_blue_stained_glass": {
     "criteria": {
       "has_the_recipe": "2021-12-25 00:17:51 +0000"
@@ -910,6 +936,12 @@
     },
     "done": true
   },
+  "minecraft:end/root": {
+    "criteria": {
+      "entered_end": "2022-02-04 21:53:19 +0000"
+    },
+    "done": true
+  },
   "aether_legacy:recipes/tools/skyroot_shovel": {
     "criteria": {
       "has_stick": "2021-12-28 03:35:50 +0000"
@@ -931,6 +963,12 @@
   "minecraft:recipes/combat/golden_chestplate": {
     "criteria": {
       "has_the_recipe": "2021-12-25 00:17:51 +0000"
+    },
+    "done": true
+  },
+  "twilightforest:alt/compat/ie_shaders": {
+    "criteria": {
+      "ie_shader_bag": "2022-02-05 00:40:05 +0000"
     },
     "done": true
   },
@@ -961,6 +999,12 @@
   "ebwizardry:crystal": {
     "criteria": {
       "criteria_0": "2021-12-25 01:44:29 +0000"
+    },
+    "done": true
+  },
+  "fossil:fossil/kill_anu": {
+    "criteria": {
+      "killed": "2022-02-05 00:40:05 +0000"
     },
     "done": true
   },
@@ -1810,6 +1854,12 @@
     },
     "done": true
   },
+  "bewitchment:mined_garnet": {
+    "criteria": {
+      "hat": "2022-02-05 01:10:10 +0000"
+    },
+    "done": true
+  },
   "cqrepoured:cqr/root": {
     "criteria": {
       "tick": "2021-12-23 04:19:29 +0000"
@@ -1831,6 +1881,12 @@
   "minecraft:recipes/misc/wheat": {
     "criteria": {
       "has_the_recipe": "2021-12-25 00:17:51 +0000"
+    },
+    "done": true
+  },
+  "fossil:fossil/iced_meat": {
+    "criteria": {
+      "broken_sword": "2022-02-05 01:10:48 +0000"
     },
     "done": true
   },
@@ -1867,6 +1923,12 @@
   "minecraft:recipes/decorations/magenta_bed": {
     "criteria": {
       "has_the_recipe": "2021-12-25 00:17:51 +0000"
+    },
+    "done": true
+  },
+  "fossil:fossil/anubite": {
+    "criteria": {
+      "killed_by": "2022-02-05 00:25:32 +0000"
     },
     "done": true
   },
@@ -3157,6 +3219,12 @@
     },
     "done": true
   },
+  "minecraft:story/enter_the_end": {
+    "criteria": {
+      "entered_end": "2022-02-04 21:53:19 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/lit_pumpkin": {
     "criteria": {
       "has_the_recipe": "2021-12-25 00:17:51 +0000"
@@ -3178,6 +3246,12 @@
   "minecraft:recipes/building_blocks/stonebrick": {
     "criteria": {
       "has_the_recipe": "2021-12-25 00:17:51 +0000"
+    },
+    "done": true
+  },
+  "fossil:fossil/broken_sword": {
+    "criteria": {
+      "broken_sword": "2022-02-05 01:10:39 +0000"
     },
     "done": true
   },
