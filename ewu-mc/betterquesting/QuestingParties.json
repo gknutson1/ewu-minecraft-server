@@ -1,0 +1,58 @@
+{
+  "parties:9": {
+    "0:10": {
+      "members:9": {
+        "0:10": {
+          "status:8": "OWNER",
+          "uuid:8": "63f4178d-736c-478b-bc04-a0f91d779469"
+        }
+      },
+      "partyID:3": 0,
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Tyler\u0027s Party"
+        }
+      }
+    },
+    "1:10": {
+      "members:9": {
+        "0:10": {
+          "status:8": "MEMBER",
+          "uuid:8": "47ab7932-ef4e-4d39-a8de-9b3a7ed6a5ef"
+        },
+        "1:10": {
+          "status:8": "OWNER",
+          "uuid:8": "1b2e03a4-196e-4dd8-836c-cab56d00de1d"
+        },
+        "2:10": {
+          "status:8": "MEMBER",
+          "uuid:8": "83931625-3755-4359-aa03-00d09cd6b557"
+        }
+      },
+      "partyID:3": 1,
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "TheHole"
+        }
+      }
+    },
+    "2:10": {
+      "members:9": {
+        "0:10": {
+          "status:8": "MEMBER",
+          "uuid:8": "18d824df-f54c-4777-a7f3-934112764988"
+        },
+        "1:10": {
+          "status:8": "OWNER",
+          "uuid:8": "027c8183-9d49-4bb3-a28b-8df19b2e5c52"
+        }
+      },
+      "partyID:3": 2,
+      "properties:10": {
+        "betterquesting:10": {
+          "name:8": "Coffee house"
+        }
+      }
+    }
+  }
+}
